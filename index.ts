@@ -1,17 +1,5 @@
-export { parseArgsStringToArgv };
-export default function parseArgsStringToArgv(
-  value: string,
-  env?: string,
-  file?: string
-): string[] {
+export function stringToArgv(value: string): string[] {
   const myArray: string[] = [];
-  if (env) {
-    myArray.push(env);
-  }
-  if (file) {
-    myArray.push(file);
-  }
-
   let current = "";
   let inQuote: string | null = null;
   let hasToken = false; // Track if we've started a token (for empty quotes)

@@ -1,9 +1,0 @@
-node_modules/
-test/
-.eslintrc.json
-.git*
-*.ts
-!*.d.ts
-tsconfig.json
-tsconfig.base.json
-tsconfig.commonjs.json
